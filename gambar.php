@@ -13,6 +13,4 @@ $gambarx = preg_replace($pattern, '', $gambar);
 $title = $parse->book->title;
 $desc = $parse->book->description;
 $author = $parse->book->authors->author->name;
-
-var_dump($gambar);
 ?>
