@@ -83,251 +83,342 @@ include('affiliate.php');
         <h3 style="margin-bottom: 50px; margin-top: 50px;">Best Seller</h3>
         <center>
             <div class="row mb-4">
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
                             <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
                         <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p align="left" style="width: 200px;">Stillwater and Koo Save the World (A Stillwater and Friends Book)</p>
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
                         </a>
                         <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659645549l/61285758._SX98_.jpg" width="150" height="200" alt="Nick and Charlie: A Heartstopper Novella" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Nick and Charlie: A...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Alice Oseman </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579089936l/50392746._SX98_.jpg" width="150" height="200" alt="Daisy Jones & The Six" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Daisy Jones & The Six</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Taylor Jenkins Reid </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658675556l/61677576._SX98_.jpg" width="150" height="200" alt="Dead Lions (Slough House, #2)" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Dead Lions (Slough...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Mick Herron </p>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
-                        </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
-                        </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-            </div>
-            <div class="row mb-4">
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
-                        </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
-                        </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                        </div>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
             </div>
@@ -336,74 +427,44 @@ include('affiliate.php');
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-white">
         <!-- Grid container -->
-        <div class="container p-4">
+        <div class="container p-4 text-center">
             <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
+            <section style="margin-bottom: 50px;">
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    
+                </a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
+                    </svg> -->
+                </a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path>
+                    </svg> -->
+                </a>
             </section>
             <!-- Section: Social media -->
 
-            <!-- Section: Form -->
-            <section class="">
-                <form action="">
-                    <!--Grid row-->
-                    <div class="row d-flex justify-content-center">
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <p class="pt-2">
-                                <strong>Sign up for our newsletter</strong>
-                            </p>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-5 col-12">
-                            <!-- Email input -->
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example21" class="form-control" />
-                                <label class="form-label" for="form5Example21">Email address</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-auto">
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-outline-light mb-4">
-                                Subscribe
-                            </button>
-                        </div>
-                        <!--Grid column-->
-                    </div>
-                    <!--Grid row-->
-                </form>
-            </section>
-            <!-- Section: Form -->
-
             <!-- Section: Text -->
-            <section class="mb-4">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+            <section style="margin-bottom: 50px;">
+                <p align="left" style="width: 1000px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Duis lacus nibh, commodo a congue vel, pharetra ut nibh. Cras placerat pretium efficitur. 
+                    Donec lacinia risus ac bibendum euismod. Vestibulum commodo tincidunt ligula id tempus. 
+                    Sed neque risus, ultrices id turpis aliquet, faucibus euismod sem. Sed molestie diam vitae porta eleifend. 
+                    Suspendisse mollis mauris sed erat accumsan fermentum. Fusce et dolor euismod, venenatis lorem sed, euismod diam. 
+                    Suspendisse velit nisl, aliquet eget semper vitae, vulputate in elit. 
+                    Donec et sapien porta, rhoncus massa id, efficitur nisi. Aenean id eros eu tellus tincidunt feugiat. 
+                    Etiam ultricies felis at lobortis imperdiet. Donec laoreet, massa eu aliquet sodales, lacus tellus aliquam nibh, a finibus neque libero ac lectus. 
+                    Aenean sagittis neque sed interdum varius.
                 </p>
             </section>
             <!-- Section: Text -->
@@ -414,85 +475,25 @@ include('affiliate.php');
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
+                        <p class="text-uppercase">Home</p>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
+                        <p class="text-uppercase">Disclaimer</p>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
+                        <p class="text-uppercase">Contact</p>
                     </div>
                     <!--Grid column-->
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
+                        <p class="text-uppercase">DMCA</p>
                     </div>
                     <!--Grid column-->
                 </div>
@@ -505,7 +506,7 @@ include('affiliate.php');
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2023 Copyright:
-            <a href="#" class="text-white">BookU</a>
+            <a style="text-decoration: none;" href="#" class="text-white">BookU</a>
         </div>
         <!-- Copyright -->
     </footer>
