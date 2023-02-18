@@ -53,7 +53,7 @@ include('affiliate.php');
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.php">BookU</a>
             <div class="div-divider"></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,18 +80,18 @@ include('affiliate.php');
 
 
     <div class="container mt-4">
+        <h3 style="margin-bottom: 50px; margin-top: 50px;">Best Seller</h3>
         <center>
             <div class="row mb-4">
                 <div class="col-md-3">
-                    <div class="cardui">
-                        <div class="cardui-image">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="176" height="160" alt="Cognitive Psychology: A Student's Handbook" />
+                    <div class="components">
+                        <div class="img" style="margin-bottom: 5px;">
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869._SX98_.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
                         </div>
-                        <div class="category"> James Patterson </div>
-                        <div class="heading">
-                            Stillwater and Koo Save the World (A Stillwater and Friends Book)
-                        </div>
-                        <a href="./?book=1338812319" class="btn btn-primary">Book Detail</a>
+                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                            <p align="left" style="width: 200px;">Stillwater and Koo Save the World (A Stillwater and Friends Book)</p>
+                        </a>
+                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
                     </div>
                 </div>
                 <div class="col-md-3">
