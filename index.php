@@ -99,7 +99,7 @@ include('affiliate.php');
                         <div class="img" style="margin-bottom: 5px;">
                             <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659645549l/61285758._SX98_.jpg" width="150" height="200" alt="Nick and Charlie: A Heartstopper Novella" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                        <a style="text-decoration: none; color: black;" href="./?book=1338885103">
                             <p style="width: 200px;">Nick and Charlie: A...</p>
                         </a>
                         <p class="text-secondary" style="margin-top: -10px;"> By Alice Oseman </p>
@@ -110,7 +110,7 @@ include('affiliate.php');
                         <div class="img" style="margin-bottom: 5px;">
                             <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579089936l/50392746._SX98_.jpg" width="150" height="200" alt="Daisy Jones & The Six" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                        <a style="text-decoration: none; color: black;" href="./?book=1524798649">
                             <p style="width: 200px;">Daisy Jones & The Six</p>
                         </a>
                         <p class="text-secondary" style="margin-top: -10px;"> By Taylor Jenkins Reid </p>
@@ -121,7 +121,7 @@ include('affiliate.php');
                         <div class="img" style="margin-bottom: 5px;">
                             <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658675556l/61677576._SX98_.jpg" width="150" height="200" alt="Dead Lions (Slough House, #2)" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
+                        <a style="text-decoration: none; color: black;" href="./?book=1616953675">
                             <p style="width: 200px;">Dead Lions (Slough...</p>
                         </a>
                         <p class="text-secondary" style="margin-top: -10px;"> By Mick Herron </p>
