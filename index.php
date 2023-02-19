@@ -223,67 +223,67 @@ include('affiliate.php');
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641847388l/59483381.jpg" width="150" height="200" alt="One Step Too Far (Frankie Elkin, #2)" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B09HCV6XHF">
+                            <p style="width: 200px;">One Step Too Far...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Lisa Gardner </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659427539l/61831468.jpg" width="150" height="200" alt="Where the Crawdads Sing" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B07FSXPMHY">
+                            <p style="width: 200px;">Where the Crawd...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Delia Owens </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676570232l/122497568.jpg" width="150" height="200" alt="Cease and Desist: A Thrilling Novel of Romantic Suspense (Callahan Security Series Book 6)" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B0BRHNTK29">
+                            <p style="width: 200px;">Cease and Desist:...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Lori Matthews </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659423177l/59901143.jpg" width="150" height="200" alt="Snowed In at the Ranch / A Kiss on Crimson Ranch" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=1335498362">
+                            <p style="width: 200px;">Snowed In at the...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By RaeAnne Thayne </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622821717l/57972209.jpg" width="150" height="200" alt="Wish You Were Here" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B0925DXNV1">
+                            <p style="width: 200px;">Wish You Were Here</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Jodi Picoult </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619093629l/57818648.jpg" width="150" height="200" alt="The Sweetness of Water" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B08F4ZQTQC">
+                            <p style="width: 200px;">The Sweetness of Water</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Nathan Harris </p>
                     </div>
                 </div>
             </div>
@@ -291,67 +291,67 @@ include('affiliate.php');
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587378349l/38532131.jpg" width="150" height="200" alt="Then She Was Gone" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=1501154656">
+                            <p style="width: 200px;">Then She Was Gone</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Lisa Jewell </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639852585l/57836903.jpg" width="150" height="200" alt="The Quarry Girls" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B09G6DMDVR">
+                            <p style="width: 200px;">The Quarry Girls</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Jess Lourey </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663708611l/61912314.jpg" width="150" height="200" alt="Faith Still Moves Mountains: Miraculous Stories of the Healing Power of Prayer" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=006322593X">
+                            <p style="width: 200px;">Faith Still Moves Mount...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Harris Faulkner </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628623381l/58744977.jpg" width="150" height="200" alt="The Last Thing He Told Me" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=1501171348">
+                            <p style="width: 200px;">The Last Thing He...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Laura Dave </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607263565l/54304141.jpg" width="150" height="200" alt="In Five Years" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=1982137452">
+                            <p style="width: 200px;">In Five Years</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Rebecca Serle </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840257l/17350989.jpg" width="150" height="200" alt="The Biology of Cancer" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=0815342195">
+                            <p style="width: 200px;">The Biology of Cancer</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Robert A. Weinberg </p>
                     </div>
                 </div>
             </div>
@@ -459,11 +459,11 @@ include('affiliate.php');
             <!-- Section: Text -->
             <section style="margin-bottom: 50px;">
                 <p align="left" style="width: 1000px;">
-                    BookU is a digital platform that provides access to a vast collection of books. 
-                    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more. 
-                    They offer convenient options to purchase or rent books in both digital and print formats. 
-                    Users can also read reviews and ratings from other readers before making a decision. 
-                    These websites also provide a platform for authors to showcase their work and engage with readers. 
+                    BookU is a digital platform that provides access to a vast collection of books.
+                    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more.
+                    They offer convenient options to purchase or rent books in both digital and print formats.
+                    Users can also read reviews and ratings from other readers before making a decision.
+                    These websites also provide a platform for authors to showcase their work and engage with readers.
                     BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
                 </p>
             </section>
