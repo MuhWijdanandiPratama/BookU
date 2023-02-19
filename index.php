@@ -435,9 +435,9 @@ include('affiliate.php');
             <section style="margin-bottom: 50px;">
                 <!-- Google -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
                         <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
-                    </svg> -->
+                    </svg>
                 </a>
 
                 <!-- Linkedin -->
@@ -459,15 +459,12 @@ include('affiliate.php');
             <!-- Section: Text -->
             <section style="margin-bottom: 50px;">
                 <p align="left" style="width: 1000px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Duis lacus nibh, commodo a congue vel, pharetra ut nibh. Cras placerat pretium efficitur. 
-                    Donec lacinia risus ac bibendum euismod. Vestibulum commodo tincidunt ligula id tempus. 
-                    Sed neque risus, ultrices id turpis aliquet, faucibus euismod sem. Sed molestie diam vitae porta eleifend. 
-                    Suspendisse mollis mauris sed erat accumsan fermentum. Fusce et dolor euismod, venenatis lorem sed, euismod diam. 
-                    Suspendisse velit nisl, aliquet eget semper vitae, vulputate in elit. 
-                    Donec et sapien porta, rhoncus massa id, efficitur nisi. Aenean id eros eu tellus tincidunt feugiat. 
-                    Etiam ultricies felis at lobortis imperdiet. Donec laoreet, massa eu aliquet sodales, lacus tellus aliquam nibh, a finibus neque libero ac lectus. 
-                    Aenean sagittis neque sed interdum varius.
+                    BookU is a digital platform that provides access to a vast collection of books. 
+                    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more. 
+                    They offer convenient options to purchase or rent books in both digital and print formats. 
+                    Users can also read reviews and ratings from other readers before making a decision. 
+                    These websites also provide a platform for authors to showcase their work and engage with readers. 
+                    BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
                 </p>
             </section>
             <!-- Section: Text -->
@@ -508,7 +505,7 @@ include('affiliate.php');
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
+            &copy; 2023 Copyright:
             <a style="text-decoration: none;" href="#" class="text-white">BookU</a>
         </div>
         <!-- Copyright -->
