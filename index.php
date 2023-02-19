@@ -359,67 +359,67 @@ include('affiliate.php');
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660772341l/60775880.jpg" width="150" height="200" alt="Code Name Sapphire" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B09X79RTKG">
+                            <p style="width: 200px;">Code Name Sapphire</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Pam Jenoff </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621199762l/58061810.jpg" width="150" height="200" alt="The Paper Palace" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B08NFT8N8F">
+                            <p style="width: 200px;">The Paper Palace</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Miranda Cowley Heller </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1640019560l/59878601.jpg" width="150" height="200" alt="The Authenticity Project" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B07SNRF2N3">
+                            <p style="width: 200px;">The Authenticity Project</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Clare Pooley </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549433350l/40672036.jpg" width="150" height="200" alt="Digital Minimalism: Choosing a Focused Life in a Noisy World" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B07DBRBP7G">
+                            <p style="width: 200px;">Digital Minimalism: Choos...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Cal Newport </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525116879l/40004706.jpg" width="150" height="200" alt="Evicted: Poverty and Profit in the American City" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B010ZXKCAO">
+                            <p style="width: 200px;">Evicted: Poverty and Prof...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Matthew Desmond </p>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="components">
                         <div class="img" style="margin-bottom: 5px;">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Cognitive Psychology: A Student's Handbook" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658300458l/59416200.jpg" width="150" height="200" alt="This Time It's Real" />
                         </div>
-                        <a style="text-decoration: none; color: black;" href="./?book=1338812319">
-                            <p style="width: 200px;">Stillwater and Koo Save...</p>
+                        <a style="text-decoration: none; color: black;" href="./?book=B09ZNTH869">
+                            <p style="width: 200px;">This Time It's Real</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Ann Liang </p>
                     </div>
                 </div>
             </div>
