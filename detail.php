@@ -12,6 +12,9 @@ if (!empty($_GET['book'])) {
 	<html lang='EN'>
 
 	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="robots" content="noindex,nofollow">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,25 +26,18 @@ if (!empty($_GET['book'])) {
 		<meta property="og:image:width" content="120">
 		<meta property="og:image:height" content="120">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Reading : <?php echo $title; ?> | <?php echo $webname; ?></title>
+		<title><?php echo $title; ?> | <?php echo $webname; ?></title>
 		<!-- google lang -->
 		<!-- Bootstrap -->
-		<link href="./source/bootstrap.min.css" rel="stylesheet">
-		<link href="./source/flag-icon.min.css" rel="stylesheet">
-		<link href="./source/font-awesome.min.css" rel="stylesheet">
-		<link href="./source/style.css" rel="stylesheet">
-		<link href="./source/fbfeed.css" rel="stylesheet">
-		<script src="./js/sg1a.js"></script>
+		<link href="source/bootstrap.min.css" rel="stylesheet">
+		<link href="source/flag-icon.min.css" rel="stylesheet">
+		<link href="source/font-awesome.min.css" rel="stylesheet">
+		<link href="source/style.css" rel="stylesheet">
+		<link href="source/fbfeed.css" rel="stylesheet">
+		<script src="js/sg1a.js"></script>
 		<script src="https://kit.fontawesome.com/680ecce84d.js" crossorigin="anonymous"></script>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-      <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
-      <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
-    <![endif]-->
-
-		<!--<meta http-equiv='refresh' content='57; url=#'>-->
+		<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
 
 	</head>
 
@@ -206,7 +202,7 @@ if (!empty($_GET['book'])) {
 
 
 
-
+		<script src="vendor/js/bootstrap.min.js"></script>
 	</body>
 
 	</html>
@@ -254,7 +250,11 @@ if (!empty($_GET['book'])) {
 		</div>
 		<div id="content-wrapper">
 			<div id="content">
-				<p><a href="./?book=1848724160" class="drop-shadow"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415588528l/23375368.jpg" width="100" height="150" alt="Cognitive Psychology: A Student's Handbook" class="captionated" /></a></p>
+				<p>
+					<a href="./?book=1848724160" class="drop-shadow">
+						<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415588528l/23375368.jpg" width="100" height="150" alt="Cognitive Psychology: A Student's Handbook" class="captionated" />
+					</a>
+				</p>
 				<p><a href="./?book=0060957514" class="drop-shadow"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1412531100l/9423971.jpg" width="100" height="150" alt="From Third World to First: Singapore and the Asian Economic Boom" class="captionated" /></a></p>
 				<p><a href="./?book=1454926406" class="drop-shadow"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502155267l/34525372.jpg" width="100" height="150" alt="Wild Magic: The Wildwood Tarot Workbook" class="captionated" /></a></p>
 				<p><a href="./?book=1439187681" class="drop-shadow"><img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344401762l/13259835.jpg" width="100" height="150" alt="Fairy Tale Interrupted: A Memoir of Life, Love, and Loss" class="captionated" /></a></p>
@@ -346,6 +346,7 @@ if (!empty($_GET['book'])) {
 				<p>Design copyright &copy; 2015 <a href="./" title="SimplyGold"><?php echo $webname; ?>x</a></p>
 			</div>
 		</div>
+		<script src="vendor/js/bootstrap.min.js"></script>
 	</body>
 
 	</html>
