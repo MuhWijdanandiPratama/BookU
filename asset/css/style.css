@@ -42,6 +42,36 @@ html::-webkit-scrollbar-thumb {
     background: var(--black);
 }
 
+section {
+    padding: 5rem 9%;
+}
+
+.judul {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.judul::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0, 0, 0, .1);
+    z-index: -1;
+}
+
+.judul span {
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
+}
+
 .header .header-1 {
     /* background: #fff; */
     background: #0A2647;
@@ -142,6 +172,78 @@ html::-webkit-scrollbar-thumb {
     z-index: 1000;
 }
 
+/* .sec-jumbotron {
+    background: rgb(44, 116, 179);
+    background: radial-gradient(circle, rgba(44, 116, 179, 1) 0%, rgba(148, 233, 223, 0.9444152661064426) 100%);
+} */
+
+.sec-jumbotron {
+    background: rgb(10, 38, 71);
+    background: linear-gradient(63deg, rgba(10, 38, 71, 1) 0%, rgba(29, 127, 253, 1) 36%, rgba(79, 255, 215, 0.9023984593837535) 100%);
+}
+
+.sec-jumbotron .baris {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.sec-jumbotron .baris .konten {
+    flex: 1 1 42rem;
+}
+
+.sec-jumbotron .baris .books-slider {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.sec-jumbotron .baris .books-slider a img {
+    height: 25rem;
+}
+
+.sec-jumbotron .baris .books-slider a:hover img {
+    transform: scale(.9);
+}
+
+.sec-jumbotron .baris .books-slider .stand {
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.sec-jumbotron .baris .konten h3 {
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+.sec-jumbotron .baris .konten p {
+    color: #e6dfdf;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.sec-main-books {
+    background: url('../image/banner-bg.jpg');
+}
+
+.sec-main-books .books-container {
+    margin: 5rem 0;
+}
+
+.sec-main-books .books-container .row .col .components {
+    padding: 1rem 1rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.sec-main-books .books-container .row .col .components a {
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+}
+
 
 
 
@@ -183,6 +285,14 @@ html::-webkit-scrollbar-thumb {
 
     body {
         padding-bottom: 6rem;
+    }
+
+    .sec-jumbotron .baris .konten {
+        text-align: center;
+    }
+
+    .sec-jumbotron .baris .konten h3 {
+        font-size: 3.5rem;
     }
 }
 
