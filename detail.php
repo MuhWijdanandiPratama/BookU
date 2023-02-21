@@ -49,27 +49,36 @@
         $asin = $_GET['book'];
         include('gambar.php');
         include('affiliate.php');
+
+        $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+
+        function formatTanggal($date)
+        {
+            return date('F d, Y', strtotime($date));
+        }
     ?>
 
 
         <div class="container my-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
-                <div class="col">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                    <div class="text-center">
+                        <a onclick="downloadpdf1()" href='#' rel='nofollow' class="btn btn-success text-light d-block mt-3" style="font-size: 1.5rem;"><i class="fas fa-download"></i> Download</a>
+                        <a onclick="downloadpdf2()" href='#' rel='nofollow' class="btn btn-success text-light d-block mt-3" style="font-size: 1.5rem;"><i class="fab fa-readme"></i> Read Online</a>
+                    </div>
                 </div>
 
-                <div class="col">
+                <div class="col-lg-9 col-md-9 col-sm-6">
                     <h1><?= str_replace("-", " ", $title) ?></h1>
                     <h4>author : <?= $author ?></h4>
-                    <h4>Description : </h4>
-                    <div style="height: 40rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
+                    <h5><?= $average_rating ?></h5>
+                    <h5>Description : </h5>
+                    <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
                         <?= $desc ?>
                     </div>
-
-                    <div class="mt-5 text-center">
-                        <a onclick="downloadpdf1()" href='#' rel='nofollow' class="btn btn-success text-light" style="font-size: 1.5rem;"><i class="fas fa-download"></i> Download</a>
-                        <a onclick="downloadpdf2()" href='#' rel='nofollow' class="btn btn-success text-light" style="font-size: 1.5rem;"><i class="fab fa-readme"></i> Read Online</a>
-                    </div>
+                    <p class="mt-3"><?= $num_pages ?> pages</p>
+                    <p>Publised <?= formatTanggal($date) ?></p>
                 </div>
             </div>
         </div>
