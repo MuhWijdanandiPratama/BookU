@@ -26,17 +26,6 @@ include('affiliate.php');
 
     <link rel="stylesheet" href="asset/css/style.css">
 
-    <!-- <style>
-        .div-divider {
-            width: 250px;
-        }
-
-        @media screen and (max-width: 375px) {
-            .div-divider {
-                width: 50px;
-            }
-        }
-    </style> -->
 </head>
 
 <body>
@@ -92,23 +81,23 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674642443l/59245869.jpg" width="150" height="200" alt="Stillwater and Koo Save the World (A Stillwater and Friends Book)" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352891165l/16149296.jpg" width="150" height="200" alt="On Writing Well: The Classic Guide to Writing Nonfiction" />
                         </div>
-                        <a href="detail.php?book=1338812319">
-                            <p>Stillwater and Koo Save...</p>
+                        <a href="detail.php?book=B0090RVGW0">
+                            <p>On Writing Well: The...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By James Patterson </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By William Zinsser </p>
                     </div>
                 </div>
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659645549l/61285758.jpg" width="150" height="200" alt="Nick and Charlie: A Heartstopper Novella" />
+                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550881448l/25242005.jpg" width="150" height="200" alt="The Complete Chi's Sweet Home, Part 1" />
                         </div>
-                        <a href="detail.php?book=1338885103">
-                            <p>Nick and Charlie: A...</p>
+                        <a href="detail.php?book=1942993161">
+                            <p>The Complete Chi's...</p>
                         </a>
-                        <p class="text-secondary" style="margin-top: -10px;"> By Alice Oseman </p>
+                        <p class="text-secondary" style="margin-top: -10px;"> By Kanata Konami </p>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -488,7 +477,10 @@ include('affiliate.php');
 
 
         <div class="text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
-            &copy; 2023 Copyright:
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Copyright:
             <a href="#" class="text-white text-decoration-none">BookU</a>
         </div>
 
