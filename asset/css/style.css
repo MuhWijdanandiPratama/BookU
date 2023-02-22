@@ -244,8 +244,72 @@ section {
     text-decoration: none;
 }
 
+.sec-footer {
+    background: #0a2647;
+    border-top: 2px solid #27AE60;
+}
 
+.sec-footer .isi-footer {
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
 
+.sec-footer .isi-footer .ikon {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.sec-footer .isi-footer .ikon a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    text-decoration: none;
+    margin: .3rem .3rem;
+}
+
+.sec-footer .isi-footer .ikon a:hover {
+    background: var(--green);
+}
+
+.sec-footer .isi-footer p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: left;
+}
+
+.sec-footer .isi-footer .cepat-link a {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem .3rem;
+}
+
+.sec-footer .isi-footer .cepat-link a:hover {
+    background: var(--green);
+}
+
+.credit {
+    background: #081E39;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.credit a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
 
 
 
@@ -274,6 +338,10 @@ section {
 
     section {
         padding: 3rem 2rem;
+    }
+
+    .sec-footer .isi-footer {
+        max-height: max-content;
     }
 }
 
@@ -306,5 +374,10 @@ section {
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+    .sec-footer .isi-footer {
+        flex-direction: column;
+        max-height: max-content;
     }
 }
