@@ -34,7 +34,7 @@ include('affiliate.php');
         <div class="header-1">
             <a href="index.php" class="logo"><i class="fas fa-book"></i> bookU</a>
 
-            <form action="" class="search-form">
+            <form action="search.php" class="search-form">
                 <input type="text" name="search" placeholder="search here.." id="search-box" required>
                 <button type="submit"><span class="fas fa-search"></span></button>
             </form>
