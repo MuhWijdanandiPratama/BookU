@@ -34,7 +34,7 @@ include('affiliate.php');
         <div class="header-1">
             <a href="index.php" class="logo"><i class="fas fa-book"></i> bookU</a>
 
-            <form action="search.php" class="search-form" method="get">
+            <form action="" class="search-form">
                 <input type="text" name="search" placeholder="search here.." id="search-box" required>
                 <button type="submit"><span class="fas fa-search"></span></button>
             </form>
@@ -422,44 +422,70 @@ include('affiliate.php');
 
     </section>
 
-    <section class="sec-footer">
+    <footer style="background: #0a2647;border-top: 2px solid #27AE60;" class="text-white">
 
-        <div class="isi-footer">
-            <div class="ikon">
-                <a href="#" class="fab fa-google"></a>
+        <div class="container text-center mt-5">
 
-                <a href="#" class="fab fa-linkedin"></a>
-
-                <a href="#" class="fab fa-github"></a>
+            <div>
+                <div class="btn btn-outline-light btn-floating m-1">
+                    <a href="#" style="text-decoration: none;height: 3rem; width: 3rem;line-height: 3rem;font-size: 2rem;color: #fff;" class="fab fa-google"></a>
+                </div>
+                <div class="btn btn-outline-light btn-floating m-1">
+                    <a href="#" style="text-decoration: none;height: 3rem; width: 3rem;line-height: 3rem;font-size: 2rem;color: #fff;" class="fab fa-linkedin"></a>
+                </div>
+                <div class="btn btn-outline-light btn-floating m-1">
+                    <a href="#" style="text-decoration: none;height: 3rem; width: 3rem;line-height: 3rem;font-size: 2rem;color: #fff;" class="fab fa-github"></a>
+                </div>
             </div>
 
-            <p>
-                BookU is a digital platform that provides access to a vast collection of books.
-                These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more.
-                They offer convenient options to purchase or rent books in both digital and print formats.
-                Users can also read reviews and ratings from other readers before making a decision.
-                These websites also provide a platform for authors to showcase their work and engage with readers.
-                BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
-            </p>
+            <div class="mt-5">
+                <p align="left">
+                    BookU is a digital platform that provides access to a vast collection of books.
+                    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more.
+                    They offer convenient options to purchase or rent books in both digital and print formats.
+                    Users can also read reviews and ratings from other readers before making a decision.
+                    These websites also provide a platform for authors to showcase their work and engage with readers.
+                    BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
+                </p>
+            </div>
 
-            <div class="cepat-link">
-                <a href="index.php">Home</a>
-                <a href="disclaimer.php">Disclaimer</a>
-                <a href="contact.php">Contact</a>
-                <a href="dcma.php">DMCA</a>
+            <div class="mt-5">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="index.php" class="text-white text-uppercase text-decoration-none">Home</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="disclaimer.php" class="text-white text-uppercase text-decoration-none">Disclaimer</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="contact.php" class="text-white text-uppercase text-decoration-none">Contact</a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <a href="dcma.php" class="text-white text-uppercase text-decoration-none">DMCA</a>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </section>
 
-    <div class="credit">
-        &copy;
-        <script>
-            document.write(new Date().getFullYear())
-        </script> Copyright:
-        <a href="#">BookU</a>
-    </div>
+        <div class="text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> Copyright:
+            <a href="#" class="text-white text-decoration-none">BookU</a>
+        </div>
+
+    </footer>
+
 
 
 
