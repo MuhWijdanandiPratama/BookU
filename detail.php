@@ -85,11 +85,11 @@
 
         <script>
             function downloadpdf1() {
-                location.href = '<?= $linksatu; ?>';
+                location.href = '<?= $affone; ?>';
             }
 
             function downloadpdf2() {
-                location.href = '<?= $linkdua; ?>';
+                location.href = '<?= $afftwo; ?>';
             }
         </script>
 
