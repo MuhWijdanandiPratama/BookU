@@ -56,6 +56,26 @@
         {
             return date('F d, Y', strtotime($date));
         }
+
+        $url = "https://www.goodreads.com/search?q=" . $author . "&key=akKZKemj3wGTLvq9MARTA";
+        $parse = simplexml_load_file($url);
+
+        $result = $parse->search->results->work;
+
+        $rows = []; // tempat kosong
+        foreach ($result as $hasil) {
+            $rows[] = $hasil;
+        }
+
+        function hapusStringSX98($url)
+        {
+            if (preg_match("/_SX98_.jpg/", $url)) {
+                $result = preg_replace("/_SX98_.jpg/", "", $url);
+                return $result . 'jpg';
+            } else {
+                return $url;
+            }
+        }
     ?>
 
 
@@ -82,6 +102,34 @@
                 </div>
             </div>
         </div>
+
+        <section class="sec-main-books">
+
+            <h1 class="judul"> <span>another book from <?= $author ?></span> </h1>
+
+            <div class="books-container">
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <?php foreach ($rows as $row) : ?>
+
+                        <div class="col">
+                            <div class="components">
+                                <div class="img mb-3">
+                                    <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                </div>
+                                <a href="detail.php?book=<?= $row->best_book->id ?>">
+                                    <p><?= $row->best_book->title ?></p>
+                                </a>
+                                <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
+                            </div>
+                        </div>
+
+                    <?php endforeach; ?>
+                </div>
+
+            </div>
+
+        </section>
 
         <script>
             function downloadpdf1() {
