@@ -369,6 +369,15 @@ section {
         width: 35rem;
         margin-top: 1rem;
     }
+
+    .sec-main-books .books-container .row .col .components {
+        padding: 1rem .5rem;
+    }
+
+    .sec-main-books .books-container .row .col .components .img img {
+        width: 100px;
+        height: 150px;
+    }
 }
 
 @media (max-width:450px) {

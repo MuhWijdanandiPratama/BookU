@@ -80,9 +80,11 @@
 
 
         <div class="container my-5">
-            <div class="row">
+            <div class="row g-5">
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                    <center>
+                        <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                    </center>
                     <div class="text-center">
                         <a onclick="downloadpdf1()" href='#' rel='nofollow' class="btn btn-success text-light d-block mt-3" style="font-size: 1.5rem;"><i class="fas fa-download"></i> Download</a>
                         <a onclick="downloadpdf2()" href='#' rel='nofollow' class="btn btn-success text-light d-block mt-3" style="font-size: 1.5rem;"><i class="fab fa-readme"></i> Read Online</a>
