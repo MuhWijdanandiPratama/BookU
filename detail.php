@@ -83,7 +83,11 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <center>
-                        <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                        <?php if (preg_match("/nophoto/", $gambarx)) : ?>
+                            <img src="asset/image/book-2.png" class="img-center center-block  img-rounded center  img-thumbnail">
+                        <?php else : ?>
+                            <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                        <?php endif; ?>
                     </center>
                     <div class="text-center">
                         <a onclick="downloadpdf1()" href='#' rel='nofollow' class="btn btn-success text-light d-block mt-3" style="font-size: 1.5rem;"><i class="fas fa-download"></i> Download</a>
@@ -117,7 +121,11 @@
                         <div class="col">
                             <div class="components">
                                 <div class="img mb-3">
-                                    <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                    <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
+                                        <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                    <?php else : ?>
+                                        <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                    <?php endif; ?>
                                 </div>
                                 <a href="detail.php?book=<?= $row->best_book->id ?>">
                                     <p><?= $row->best_book->title ?></p>

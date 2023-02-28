@@ -89,7 +89,11 @@
                             <div class="col">
                                 <div class="components">
                                     <div class="img mb-3">
-                                        <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
+                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <?php else : ?>
+                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <?php endif; ?>
                                     </div>
                                     <a href="detail.php?book=<?= $row->best_book->id ?>">
                                         <p><?= $row->best_book->title ?></p>
