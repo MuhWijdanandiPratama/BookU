@@ -23,7 +23,6 @@
 
     <header class="header">
         <div class="header-1">
-            <!-- <a href="index.php" class="logo"><i class="fas fa-book"></i> bookU</a> -->
             <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"></i> bookU</a>
 
             <form action="search.php" class="search-form">
@@ -98,14 +97,21 @@
 
                 <div class="col-lg-9 col-md-9 col-sm-6">
                     <h1><?= str_replace("-", " ", $title) ?></h1>
-                    <h4>author : <?= $author ?></h4>
-                    <h5><?= $average_rating ?></h5>
+                    <hr>
+                    <div class="row row-cols-2 g-5">
+                        <div class="col">
+                            <h4>author : <?= $author ?></h4>
+                            <h5><?= $average_rating ?></h5>
+                        </div>
+                        <div class="col">
+                            <h5><?= $num_pages ?> pages</h5>
+                            <h5>Publised <?= formatTanggal($date) ?></h5>
+                        </div>
+                    </div>
                     <h5>Description : </h5>
                     <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
                         <?= $desc ?>
                     </div>
-                    <p class="mt-3"><?= $num_pages ?> pages</p>
-                    <p>Publised <?= formatTanggal($date) ?></p>
                 </div>
             </div>
         </div>
@@ -116,11 +122,14 @@
 
             <div class="books-container">
 
-                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-                    <?php foreach ($rows as $row) : ?>
+                <!-- <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3"> -->
+                <div class="swiper another-books-slider">
+                    <div class="swiper-wrapper">
 
-                        <div class="col">
-                            <div class="components">
+                        <?php foreach ($rows as $row) : ?>
+
+                            <!-- <div class="col"> -->
+                            <div class="swiper-slide components">
                                 <div class="img mb-3">
                                     <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
                                         <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
@@ -133,9 +142,16 @@
                                 </a>
                                 <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
                             </div>
-                        </div>
+                            <!-- </div> -->
 
-                    <?php endforeach; ?>
+                        <?php endforeach; ?>
+                        <!-- </div> -->
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
                 </div>
 
             </div>

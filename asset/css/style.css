@@ -244,6 +244,38 @@ section {
     text-decoration: none;
 }
 
+.sec-main-books .books-container .another-books-slider .swiper-wrapper .components {
+    padding: 1rem 1rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.sec-main-books .books-container .another-books-slider .swiper-wrapper .components a {
+    color: var(--black);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    border: var(--border-hover);
+    height: 4rem;
+    width: 4rem;
+    color: var(--black);
+    background: #fff;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--black);
+    color: #fff;
+}
+
 .sec-footer {
     background: #0a2647;
     border-top: 2px solid #27AE60;
