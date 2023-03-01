@@ -414,6 +414,17 @@ section {
         width: 100px;
         height: 150px;
     }
+
+    .sec-footer .isi-footer .cepat-link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .sec-footer .isi-footer .cepat-link a {
+        flex: 50%;
+        text-align: center;
+    }
 }
 
 @media (max-width:450px) {
