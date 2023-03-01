@@ -137,7 +137,7 @@
                                         <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
                                     <?php endif; ?>
                                 </div>
-                                <a href="detail.php?book=<?= $row->best_book->id ?>">
+                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= $row->best_book->id ?>">
                                     <p><?= $row->best_book->title ?></p>
                                 </a>
                                 <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
