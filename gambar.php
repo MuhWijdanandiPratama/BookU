@@ -21,3 +21,4 @@ $publication_day = $parse->book->publication_day;
 $average_rating = $parse->book->average_rating;
 
 $num_pages = $parse->book->num_pages;
+$publisher = $parse->book->publisher;

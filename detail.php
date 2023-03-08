@@ -99,17 +99,71 @@
 
                 <div class="col-lg-9 col-md-9 col-sm-6">
                     <h1><?= str_replace("-", " ", $title) ?></h1>
+                    <h5><?php 
+
+                            $star = 1;
+                            while ($star <= 5) {
+                                if ($average_rating < $star) {
+                                    ?>
+                                        <li style="color: gold;" class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <?php
+                                } else{
+                                    ?>
+                                        <li style="color: gold;" class="list-inline-item"><i class="fa fa-star"></i></li>
+                                    <?php
+                                }
+
+                                $star++;
+                            }
+                            ?>
+                            <?= $average_rating ?>
+                            </h5>
                     <hr>
                     <div class="row row-cols-2 g-5">
                         <div class="col">
-                            <h4>author : <?= $author ?></h4>
-                            <h5><?= $average_rating ?></h5>
+                            <table>
+                                <tr>
+                                    <td><h4>author</h4></td>
+                                    <td><h4>&nbsp;:</h4></td>
+                                    <td><h4>&nbsp;<?= $author ?></h4></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>format</h5></td>
+                                    <td><h5>&nbsp;:</h5></td>
+                                    <td><h5>&nbsp;Pdf, EPub, Mobi, Kindle</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>publisher</h5></td>
+                                    <td><h5>&nbsp;:</h5></td>
+                                    <td><h5>&nbsp;<?= $publisher ?></h5></td>
+                                </tr>
+                            </table>
                         </div>
                         <div class="col">
-                            <h5><?= $num_pages ?> pages</h5>
-                            <h5>Publised <?= formatTanggal($date) ?></h5>
+                            <table>
+                                <tr>
+                                    <td><h5>pages</h5></td>
+                                    <td><h5>&nbsp;:</h5></td>
+                                    <td><h5>&nbsp;<?= $num_pages ?> pages</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>publised</h5></td>
+                                    <td><h5>&nbsp;:</h5></td>
+                                    <td><h5>&nbsp;<?= formatTanggal($date) ?></h5></td>
+                                </tr>
+                            </table>
                         </div>
-                    </div>
+                    </div><br>
+                    <div class="row">
+							<div class="col-md-12">
+								<div class="list-group">
+									<a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-success" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Register a free 1 month Trial Account.</b></a>
+									<a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-info" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Download as many books as you like (Personal use)</b></a>
+									<a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-warning" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Cancel the membership at any time if not satisfied.</b></a>
+									<a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-danger" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Join Over 80000 Happy Readers</b></a>
+								</div>
+							</div>
+                        </div><br><br>
                     <h5>Description : </h5>
                     <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
                         <?= $desc ?>

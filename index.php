@@ -83,7 +83,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352891165l/16149296.jpg" width="150" height="200" alt="On Writing Well: The Classic Guide to Writing Nonfiction" />
+                            <a href="detail.php?book=B0090RVGW0">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352891165l/16149296.jpg" width="150" height="200" alt="On Writing Well: The Classic Guide to Writing Nonfiction" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B0090RVGW0">
                             <p>On Writing Well: The...</p>
@@ -94,7 +96,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550881448l/25242005.jpg" width="150" height="200" alt="The Complete Chi's Sweet Home, Part 1" />
+                            <a href="detail.php?book=1942993161">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550881448l/25242005.jpg" width="150" height="200" alt="The Complete Chi's Sweet Home, Part 1" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1942993161">
                             <p>The Complete Chi's...</p>
@@ -105,7 +109,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579089936l/50392746.jpg" width="150" height="200" alt="Daisy Jones & The Six" />
+                            <a href="detail.php?book=1524798649">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579089936l/50392746.jpg" width="150" height="200" alt="Daisy Jones & The Six" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1524798649">
                             <p>Daisy Jones & The Six</p>
@@ -116,7 +122,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658675556l/61677576.jpg" width="150" height="200" alt="Dead Lions (Slough House, #2)" />
+                            <a href="detail.php?book=1616953675">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658675556l/61677576.jpg" width="150" height="200" alt="Dead Lions (Slough House, #2)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1616953675">
                             <p>Dead Lions (Slough...</p>
@@ -127,7 +135,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596890589l/52664757.jpg" width="150" height="200" alt="The Vanished (Shuri: A Black Panther Novel #2)" />
+                            <a href="detail.php?book=1338587188">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596890589l/52664757.jpg" width="150" height="200" alt="The Vanished (Shuri: A Black Panther Novel #2)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1338587188">
                             <p>The Vanished (Shuri:...</p>
@@ -138,7 +148,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567084300l/43885679.jpg" width="150" height="200" alt="Frozen 2: Forest of Shadows" />
+                            <a href="detail.php?book=1368043631">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567084300l/43885679.jpg" width="150" height="200" alt="Frozen 2: Forest of Shadows" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1368043631">
                             <p>Frozen 2: Forest of...</p>
@@ -151,7 +163,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1633494539l/59201362.jpg" width="150" height="200" alt="The Wife Before" />
+                            <a href="detail.php?book=1496731115">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1633494539l/59201362.jpg" width="150" height="200" alt="The Wife Before" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1496731115">
                             <p>The Wife Before</p>
@@ -162,7 +176,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652806307l/60864807.jpg" width="150" height="200" alt="Encore in Death (In Death #56)" />
+                            <a href="detail.php?book=B09Y46SX9G">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1652806307l/60864807.jpg" width="150" height="200" alt="Encore in Death (In Death #56)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09Y46SX9G">
                             <p>Encore in Death (In...</p>
@@ -173,7 +189,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1673217326i/62022434.jpg" width="150" height="200" alt="Things We Hide from the Light (Knockemout, #2)" />
+                            <a href="detail.php?book=B0BB64ZRMW">
+                                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1673217326i/62022434.jpg" width="150" height="200" alt="Things We Hide from the Light (Knockemout, #2)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B0BB64ZRMW">
                             <p>Things We Hide fr...</p>
@@ -184,7 +202,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654871790l/60831811.jpg" width="150" height="200" alt="Beautiful Graves" />
+                            <a href="detail.php?book=B09W2C9QB1">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1654871790l/60831811.jpg" width="150" height="200" alt="Beautiful Graves" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09W2C9QB1">
                             <p>Beautiful Graves</p>
@@ -195,7 +215,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673204569l/68320207.jpg" width="150" height="200" alt="Tress of the Emerald Sea" />
+                            <a href="detail.php?book=B0BPNB19CL">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1673204569l/68320207.jpg" width="150" height="200" alt="Tress of the Emerald Sea" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B0BPNB19CL">
                             <p>Tress of the Eme...</p>
@@ -206,7 +228,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659050314l/61049580.jpg" width="150" height="200" alt="Token Black Girl: A Memoir" />
+                            <a href="detail.php?book=B09KLLG3L2">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659050314l/61049580.jpg" width="150" height="200" alt="Token Black Girl: A Memoir" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09KLLG3L2">
                             <p>Token Black Girl: A...</p>
@@ -219,7 +243,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641847388l/59483381.jpg" width="150" height="200" alt="One Step Too Far (Frankie Elkin, #2)" />
+                            <a href="detail.php?book=B09HCV6XHF">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1641847388l/59483381.jpg" width="150" height="200" alt="One Step Too Far (Frankie Elkin, #2)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09HCV6XHF">
                             <p>One Step Too Far...</p>
@@ -230,7 +256,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659427539l/61831468.jpg" width="150" height="200" alt="Where the Crawdads Sing" />
+                            <a href="detail.php?book=B07FSXPMHY">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659427539l/61831468.jpg" width="150" height="200" alt="Where the Crawdads Sing" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B07FSXPMHY">
                             <p>Where the Crawd...</p>
@@ -241,7 +269,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676570232l/122497568.jpg" width="150" height="200" alt="Cease and Desist: A Thrilling Novel of Romantic Suspense (Callahan Security Series Book 6)" />
+                            <a href="detail.php?book=B0BRHNTK29">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676570232l/122497568.jpg" width="150" height="200" alt="Cease and Desist: A Thrilling Novel of Romantic Suspense (Callahan Security Series Book 6)" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B0BRHNTK29">
                             <p>Cease and Desist:...</p>
@@ -252,7 +282,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659423177l/59901143.jpg" width="150" height="200" alt="Snowed In at the Ranch / A Kiss on Crimson Ranch" />
+                            <a href="detail.php?book=1335498362">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659423177l/59901143.jpg" width="150" height="200" alt="Snowed In at the Ranch / A Kiss on Crimson Ranch" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1335498362">
                             <p>Snowed In at the...</p>
@@ -263,7 +295,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622821717l/57972209.jpg" width="150" height="200" alt="Wish You Were Here" />
+                            <a href="detail.php?book=B0925DXNV1">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622821717l/57972209.jpg" width="150" height="200" alt="Wish You Were Here" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B0925DXNV1">
                             <p>Wish You Were Here</p>
@@ -274,7 +308,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619093629l/57818648.jpg" width="150" height="200" alt="The Sweetness of Water" />
+                            <a href="detail.php?book=B08F4ZQTQC">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619093629l/57818648.jpg" width="150" height="200" alt="The Sweetness of Water" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B08F4ZQTQC">
                             <p>The Sweetness of Water</p>
@@ -287,7 +323,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587378349l/38532131.jpg" width="150" height="200" alt="Then She Was Gone" />
+                            <a href="detail.php?book=1501154656">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587378349l/38532131.jpg" width="150" height="200" alt="Then She Was Gone" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1501154656">
                             <p>Then She Was Gone</p>
@@ -298,7 +336,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639852585l/57836903.jpg" width="150" height="200" alt="The Quarry Girls" />
+                            <a href="detail.php?book=B09G6DMDVR">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639852585l/57836903.jpg" width="150" height="200" alt="The Quarry Girls" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09G6DMDVR">
                             <p>The Quarry Girls</p>
@@ -309,7 +349,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663708611l/61912314.jpg" width="150" height="200" alt="Faith Still Moves Mountains: Miraculous Stories of the Healing Power of Prayer" />
+                            <a href="detail.php?book=006322593X">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1663708611l/61912314.jpg" width="150" height="200" alt="Faith Still Moves Mountains: Miraculous Stories of the Healing Power of Prayer" />
+                            </a>
                         </div>
                         <a href="detail.php?book=006322593X">
                             <p>Faith Still Moves Mount...</p>
@@ -320,7 +362,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628623381l/58744977.jpg" width="150" height="200" alt="The Last Thing He Told Me" />
+                            <a href="detail.php?book=1501171348">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628623381l/58744977.jpg" width="150" height="200" alt="The Last Thing He Told Me" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1501171348">
                             <p>The Last Thing He...</p>
@@ -331,7 +375,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607263565l/54304141.jpg" width="150" height="200" alt="In Five Years" />
+                            <a href="detail.php?book=1982137452">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607263565l/54304141.jpg" width="150" height="200" alt="In Five Years" />
+                            </a>
                         </div>
                         <a href="detail.php?book=1982137452">
                             <p>In Five Years</p>
@@ -342,7 +388,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840257l/17350989.jpg" width="150" height="200" alt="The Biology of Cancer" />
+                            <a href="detail.php?book=0815342195">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370840257l/17350989.jpg" width="150" height="200" alt="The Biology of Cancer" />
+                            </a>
                         </div>
                         <a href="detail.php?book=0815342195">
                             <p>The Biology of Cancer</p>
@@ -355,7 +403,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660772341l/60775880.jpg" width="150" height="200" alt="Code Name Sapphire" />
+                            <a href="detail.php?book=B09X79RTKG">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660772341l/60775880.jpg" width="150" height="200" alt="Code Name Sapphire" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09X79RTKG">
                             <p>Code Name Sapphire</p>
@@ -366,7 +416,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621199762l/58061810.jpg" width="150" height="200" alt="The Paper Palace" />
+                            <a href="detail.php?book=B08NFT8N8F">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621199762l/58061810.jpg" width="150" height="200" alt="The Paper Palace" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B08NFT8N8F">
                             <p>The Paper Palace</p>
@@ -377,7 +429,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1640019560l/59878601.jpg" width="150" height="200" alt="The Authenticity Project" />
+                            <a href="detail.php?book=B07SNRF2N3">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1640019560l/59878601.jpg" width="150" height="200" alt="The Authenticity Project" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B07SNRF2N3">
                             <p>The Authenticity Project</p>
@@ -388,7 +442,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549433350l/40672036.jpg" width="150" height="200" alt="Digital Minimalism: Choosing a Focused Life in a Noisy World" />
+                            <a href="detail.php?book=B07DBRBP7G">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549433350l/40672036.jpg" width="150" height="200" alt="Digital Minimalism: Choosing a Focused Life in a Noisy World" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B07DBRBP7G">
                             <p>Digital Minimalism: Choos...</p>
@@ -399,7 +455,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525116879l/40004706.jpg" width="150" height="200" alt="Evicted: Poverty and Profit in the American City" />
+                            <a href="detail.php?book=B010ZXKCAO">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525116879l/40004706.jpg" width="150" height="200" alt="Evicted: Poverty and Profit in the American City" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B010ZXKCAO">
                             <p>Evicted: Poverty and Prof...</p>
@@ -410,7 +468,9 @@ include('affiliate.php');
                 <div class="col mb-4">
                     <div class="components">
                         <div class="img mb-3">
-                            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658300458l/59416200.jpg" width="150" height="200" alt="This Time It's Real" />
+                            <a href="detail.php?book=B09ZNTH869">
+                                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1658300458l/59416200.jpg" width="150" height="200" alt="This Time It's Real" />
+                            </a>
                         </div>
                         <a href="detail.php?book=B09ZNTH869">
                             <p>This Time It's Real</p>
