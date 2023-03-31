@@ -59,7 +59,7 @@
             return date('F d, Y', strtotime($date));
         }
 
-        $url = "https://www.goodreads.com/search?q=" . $author . "&key=akKZKemj3wGTLvq9MARTA";
+        $url = "https://www.goodreads.com/search?q=" . $author . "&key=yepSbX0wOTBiypm7RRQ3A";
         $parse = simplexml_load_file($url);
 
         $result = $parse->search->results->work;
@@ -188,9 +188,13 @@
                             <div class="swiper-slide components">
                                 <div class="img mb-3">
                                     <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
-                                        <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
+                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        </a>
                                     <?php else : ?>
-                                        <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
+                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        </a>
                                     <?php endif; ?>
                                 </div>
                                 <a style="text-decoration: none; color: black;" href="detail.php?book=<?= $row->best_book->id ?>">
