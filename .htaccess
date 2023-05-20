@@ -1,4 +1,11 @@
 RewriteEngine On
 RewriteCond %{QUERY_STRING} book=1662500319
+RewriteRule ^detail\.php$ /404.php? [L,R=301]
+
+RewriteEngine On
 RewriteCond %{QUERY_STRING} book=B09J8JSJL5
+RewriteRule ^detail\.php$ /404.php? [L,R=301]
+
+RewriteEngine On
+RewriteCond %{QUERY_STRING} book=1542006589
 RewriteRule ^detail\.php$ /404.php? [L,R=301]
