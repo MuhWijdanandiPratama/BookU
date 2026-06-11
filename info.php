@@ -1,6 +1,9 @@
 <?php
-set_time_limit(0); 
-error_reporting(0); 
+set_time_limit(0);
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+ini_set('error_log', __DIR__ . '/error.log');
 $new_mem_limit = '256M';
 $old_mem_limit = ini_set('memory_limit', $new_mem_limit);
 

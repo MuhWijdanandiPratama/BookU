@@ -52,21 +52,35 @@
         include('gambar.php');
         include('affiliate.php');
 
-        $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+        if (!empty($publication_year) && !empty($publication_month) && !empty($publication_day)) {
+            $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+        } else {
+            $date = '';
+        }
 
         function formatTanggal($date)
         {
-            return date('F d, Y', strtotime($date));
+            if (empty($date)) {
+                return 'Unknown';
+            }
+            $timestamp = strtotime($date);
+            if ($timestamp === false) {
+                return 'Unknown';
+            }
+            return date('F d, Y', $timestamp);
         }
 
-        $url = "https://www.goodreads.com/search?q=" . $author . "&key=yepSbX0wOTBiypm7RRQ3A";
-        $parse = simplexml_load_file($url);
+        $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=yepSbX0wOTBiypm7RRQ3A";
+        $parse = @simplexml_load_file($url);
 
-        $result = $parse->search->results->work;
-
-        $rows = []; // tempat kosong
-        foreach ($result as $hasil) {
-            $rows[] = $hasil;
+        $rows = [];
+        if ($parse !== false && isset($parse->search->results->work)) {
+            $result = $parse->search->results->work;
+            foreach ($result as $hasil) {
+                $rows[] = $hasil;
+            }
+        } else {
+            error_log("detail.php: Failed to load related books for author: " . $author);
         }
 
         function hapusStringSX98($url)
