@@ -1,48 +1,15 @@
+<?php include('includes/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('includes/head.php'); ?>
     <title>Detail Book</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="asset/css/cardui.css">
-
-    <link rel="stylesheet" href="asset/css/style.css">
-
-    <link rel="shortcut icon" href="asset/image/favicon.ico">
-
 </head>
 
 <body style="background: url('asset/image/banner-bg.jpg');">
 
-    <header class="header">
-        <div class="header-1">
-            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"></i> bookU</a>
-
-            <form action="search.php" class="search-form">
-                <input type="text" name="search" placeholder="search here.." id="search-box" required>
-                <button type="submit"><span class="fas fa-search"></span></button>
-            </form>
-
-        </div>
-
-        <div class="header-2">
-            <nav class="nafbar">
-                <a href="index.php">home</a>
-                <a href="disclaimer.php">disclaimer</a>
-                <a href="contact.php">contact</a>
-                <a href="dmca.php">DMCA</a>
-            </nav>
-        </div>
-    </header>
+    <?php include('includes/header.php'); ?>
 
 
 
@@ -59,25 +26,7 @@
             return date('F d, Y', strtotime($date));
         }
 
-        $url = "https://www.goodreads.com/search?q=" . $author . "&key=yepSbX0wOTBiypm7RRQ3A";
-        $parse = simplexml_load_file($url);
-
-        $result = $parse->search->results->work;
-
-        $rows = []; // tempat kosong
-        foreach ($result as $hasil) {
-            $rows[] = $hasil;
-        }
-
-        function hapusStringSX98($url)
-        {
-            if (preg_match("/_SX98_.jpg/", $url)) {
-                $result = preg_replace("/_SX98_.jpg/", "", $url);
-                return $result . 'jpg';
-            } else {
-                return $url;
-            }
-        }
+        $rows = searchGoodreads($author);
     ?>
 
 
@@ -186,21 +135,7 @@
 
                             <!-- <div class="col"> -->
                             <div class="swiper-slide components">
-                                <div class="img mb-3">
-                                    <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
-                                        </a>
-                                    <?php else : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
-                                        </a>
-                                    <?php endif; ?>
-                                </div>
-                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= $row->best_book->id ?>">
-                                    <p><?= $row->best_book->title ?></p>
-                                </a>
-                                <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
+                                <?php renderBookCard($row); ?>
                             </div>
                             <!-- </div> -->
 
@@ -241,55 +176,9 @@
 
 
 
-    <section class="sec-footer">
+    <?php include('includes/footer.php'); ?>
 
-        <div class="isi-footer">
-            <div class="ikon">
-                <a href="#" class="fab fa-google"></a>
-
-                <a href="#" class="fab fa-linkedin"></a>
-
-                <a href="#" class="fab fa-github"></a>
-            </div>
-
-            <p>
-                BookU is a digital platform that provides access to a vast collection of books.
-                These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more.
-                They offer convenient options to purchase or rent books in both digital and print formats.
-                Users can also read reviews and ratings from other readers before making a decision.
-                These websites also provide a platform for authors to showcase their work and engage with readers.
-                BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
-            </p>
-
-            <div class="cepat-link">
-                <a href="index.php">Home</a>
-                <a href="disclaimer.php">Disclaimer</a>
-                <a href="contact.php">Contact</a>
-                <a href="dcma.php">DMCA</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <div class="credit">
-        &copy;
-        <script>
-            document.write(new Date().getFullYear())
-        </script> Copyright:
-        <a href="#">BookU</a>
-    </div>
-
-
-
-
-
-
-    <script src="vendor/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script src="asset/js/script.js"></script>
+    <?php include('includes/scripts.php'); ?>
 </body>
 
 </html>
