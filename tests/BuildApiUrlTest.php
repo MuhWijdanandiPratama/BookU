@@ -42,7 +42,7 @@ final class BuildApiUrlTest extends TestCase
     {
         $url = buildSearchApiUrl('J.K. Rowling', $this->apiKey);
         $this->assertSame(
-            'https://www.goodreads.com/search?q=J.K. Rowling&key=testKey123',
+            'https://www.goodreads.com/search?q=J.K.+Rowling&key=testKey123',
             $url
         );
     }
@@ -56,6 +56,15 @@ final class BuildApiUrlTest extends TestCase
         );
     }
 
+    public function testSearchApiUrlEncodesSpecialChars(): void
+    {
+        $url = buildSearchApiUrl('Tom & Jerry', $this->apiKey);
+        $this->assertSame(
+            'https://www.goodreads.com/search?q=Tom+%26+Jerry&key=testKey123',
+            $url
+        );
+    }
+
     public function testSearchApiUrlContainsKeyParam(): void
     {
         $url = buildSearchApiUrl('test', $this->apiKey);
@@ -65,6 +74,6 @@ final class BuildApiUrlTest extends TestCase
     public function testSearchApiUrlContainsQueryParam(): void
     {
         $url = buildSearchApiUrl('Stephen King', $this->apiKey);
-        $this->assertStringContainsString('q=Stephen King', $url);
+        $this->assertStringContainsString('q=Stephen+King', $url);
     }
 }

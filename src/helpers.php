@@ -49,7 +49,8 @@ function cleanImageUrl(string $imageUrl): string
 /**
  * Build an affiliate link by appending the book title.
  *
- * Extracted from affiliate.php.
+ * Extracted from affiliate.php. The title is appended directly to the
+ * a_bid parameter value with no separator, matching the original behavior.
  *
  * @param string $title Book title.
  * @return string Full affiliate URL.
@@ -64,7 +65,7 @@ function buildAffiliateUrl(string $title): string
  * Check whether a search query or book identifier contains a blocked term
  * from the DMCA blocklist.
  *
- * Extracted from dmcaRemover.php.
+ * New helper that operates on the blocklist array defined in dmcaRemover.php.
  *
  * @param string $input   The search term or book ID to check.
  * @param array  $blocklist Array of blocked strings.
@@ -119,5 +120,5 @@ function buildBookApiUrl(string $asin, string $apiKey): string
  */
 function buildSearchApiUrl(string $query, string $apiKey): string
 {
-    return "https://www.goodreads.com/search?q=" . $query . "&key=" . $apiKey;
+    return "https://www.goodreads.com/search?q=" . urlencode($query) . "&key=" . urlencode($apiKey);
 }
