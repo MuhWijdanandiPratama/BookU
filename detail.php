@@ -70,7 +70,8 @@
             return date('F d, Y', $timestamp);
         }
 
-        $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=yepSbX0wOTBiypm7RRQ3A";
+        require_once(__DIR__ . '/config.php');
+        $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=" . urlencode($goodreads_api_key);
         $parse = @simplexml_load_file($url);
 
         $rows = [];
@@ -102,7 +103,7 @@
                         <?php if (preg_match("/nophoto/", $gambarx)) : ?>
                             <img src="asset/image/book-2.png" class="img-center center-block  img-rounded center  img-thumbnail">
                         <?php else : ?>
-                            <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                            <img src="<?= htmlspecialchars($gambarx, ENT_QUOTES, 'UTF-8') ?>" class="img-center center-block  img-rounded center  img-thumbnail">
                         <?php endif; ?>
                     </center>
                     <div class="text-center">
@@ -112,7 +113,7 @@
                 </div>
 
                 <div class="col-lg-9 col-md-9 col-sm-6">
-                    <h1><?= str_replace("-", " ", $title) ?></h1>
+                    <h1><?= htmlspecialchars(str_replace("-", " ", $title), ENT_QUOTES, 'UTF-8') ?></h1>
                     <h5><?php 
 
                             $star = 1;
@@ -130,7 +131,7 @@
                                 $star++;
                             }
                             ?>
-                            <?= $average_rating ?>
+                            <?= htmlspecialchars($average_rating, ENT_QUOTES, 'UTF-8') ?>
                             </h5>
                     <hr>
                     <div class="row row-cols-2 g-5">
@@ -139,7 +140,7 @@
                                 <tr>
                                     <td><h4>author</h4></td>
                                     <td><h4>&nbsp;:</h4></td>
-                                    <td><h4>&nbsp;<?= $author ?></h4></td>
+                                    <td><h4>&nbsp;<?= htmlspecialchars($author, ENT_QUOTES, 'UTF-8') ?></h4></td>
                                 </tr>
                                 <tr>
                                     <td><h5>format</h5></td>
@@ -149,7 +150,7 @@
                                 <tr>
                                     <td><h5>publisher</h5></td>
                                     <td><h5>&nbsp;:</h5></td>
-                                    <td><h5>&nbsp;<?= $publisher ?></h5></td>
+                                    <td><h5>&nbsp;<?= htmlspecialchars($publisher, ENT_QUOTES, 'UTF-8') ?></h5></td>
                                 </tr>
                             </table>
                         </div>
@@ -158,7 +159,7 @@
                                 <tr>
                                     <td><h5>pages</h5></td>
                                     <td><h5>&nbsp;:</h5></td>
-                                    <td><h5>&nbsp;<?= $num_pages ?> pages</h5></td>
+                                    <td><h5>&nbsp;<?= htmlspecialchars($num_pages, ENT_QUOTES, 'UTF-8') ?> pages</h5></td>
                                 </tr>
                                 <tr>
                                     <td><h5>publised</h5></td>
@@ -180,7 +181,7 @@
                         </div><br><br>
                     <h5>Description : </h5>
                     <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
-                        <?= $desc ?>
+                        <?= htmlspecialchars($desc, ENT_QUOTES, 'UTF-8') ?>
                     </div>
                 </div>
             </div>
@@ -188,7 +189,7 @@
 
         <section class="sec-main-books">
 
-            <h1 class="judul"> <span>another book from <?= $author ?></span> </h1>
+            <h1 class="judul"> <span>another book from <?= htmlspecialchars($author, ENT_QUOTES, 'UTF-8') ?></span> </h1>
 
             <div class="books-container">
 
@@ -202,19 +203,19 @@
                             <div class="swiper-slide components">
                                 <div class="img mb-3">
                                     <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= htmlspecialchars($row->best_book->id, ENT_QUOTES, 'UTF-8') ?>">
+                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= htmlspecialchars($row->best_book->title, ENT_QUOTES, 'UTF-8') ?>" />
                                         </a>
                                     <?php else : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= htmlspecialchars($row->best_book->id, ENT_QUOTES, 'UTF-8') ?>">
+                                            <img src="<?= htmlspecialchars(hapusStringSX98($row->best_book->image_url), ENT_QUOTES, 'UTF-8') ?>" width="150" height="200" alt="<?= htmlspecialchars($row->best_book->title, ENT_QUOTES, 'UTF-8') ?>" />
                                         </a>
                                     <?php endif; ?>
                                 </div>
-                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= $row->best_book->id ?>">
-                                    <p><?= $row->best_book->title ?></p>
+                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= htmlspecialchars($row->best_book->id, ENT_QUOTES, 'UTF-8') ?>">
+                                    <p><?= htmlspecialchars($row->best_book->title, ENT_QUOTES, 'UTF-8') ?></p>
                                 </a>
-                                <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
+                                <p class="text-secondary" style="margin-top: -10px;"> By <?= htmlspecialchars($row->best_book->author->name, ENT_QUOTES, 'UTF-8') ?> </p>
                             </div>
                             <!-- </div> -->
 
@@ -234,11 +235,11 @@
 
         <script>
             function downloadpdf1() {
-                location.href = '<?= $affone; ?>';
+                location.href = <?= json_encode($affone, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES) ?>;
             }
 
             function downloadpdf2() {
-                location.href = '<?= $afftwo; ?>';
+                location.href = <?= json_encode($afftwo, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_UNESCAPED_SLASHES) ?>;
             }
         </script>
 

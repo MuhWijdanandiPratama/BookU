@@ -1,6 +1,13 @@
 <?php
 
-$url = "https://www.goodreads.com/book/isbn/" . $asin . "?key=akKZKemj3wGTLvq9MARTA";
+require_once(__DIR__ . '/config.php');
+
+// Validate $asin: allow only alphanumeric characters (ISBN/ASIN format)
+if (!isset($asin) || !preg_match('/^[A-Za-z0-9]+$/', $asin)) {
+    $asin = '';
+}
+
+$url = "https://www.goodreads.com/book/isbn/" . urlencode($asin) . "?key=" . urlencode($goodreads_api_key);
 
 $parse = @simplexml_load_file($url);
 
