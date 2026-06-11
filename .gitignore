@@ -21,3 +21,4 @@ error_log
 
 # Vendor (if using composer)
 vendor/
+.env
