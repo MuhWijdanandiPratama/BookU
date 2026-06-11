@@ -77,6 +77,24 @@
   <?php include('includes/footer.php'); ?>
 
   <?php include('includes/scripts.php'); ?>
+      <div class="cepat-link text-light">
+        <a href="index.php">Home</a>
+        <a href="disclaimer.php">Disclaimer</a>
+        <a href="contact.php">Contact</a>
+        <a href="dmca.php">DMCA</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="credit">
+    &copy;
+    <script>
+      document.write(new Date().getFullYear())
+    </script> Copyright:
+    <a href="#">BookU</a>
+  </div>
 </body>
 
 </html>

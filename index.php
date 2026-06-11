@@ -2,11 +2,6 @@
 
 include('info.php');
 
-if (isset($_GET['book']) && $_GET['book'] !== '') {
-    $asin = $_GET['book'];
-    include('gambar.php');
-    include('affiliate.php');
-}
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +17,37 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
     BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.">
     <meta name="robots" content="noindex">
     <title>BookU - Find your Favorite's Free Book's Here!!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookU is a digital platform that provides access to a vast collection of books. Browse through various genres including fiction, non-fiction, self-help, and many more. Read reviews and ratings from other readers before making a decision.">
+    <title>BookU - Find Your Favorite Free Books Here</title>
     <link rel="canonical" href="https://happybooku.com">
 </head>
 
 <body>
 
     <?php include('includes/header.php'); ?>
+    <header class="header">
+        <div class="header-1">
+            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
+
+            <form action="search.php" class="search-form">
+                <input type="text" name="search" placeholder="search here.." id="search-box" required>
+                <button type="submit"><span class="fas fa-search"></span></button>
+            </form>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="nafbar">
+                <a href="index.php">home</a>
+                <a href="disclaimer.php">disclaimer</a>
+                <a href="contact.php">contact</a>
+                <a href="dmca.php">DMCA</a>
+            </nav>
+        </div>
+    </header>
 
     <section class="sec-jumbotron">
         <div class="baris">
@@ -461,6 +481,51 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
     </section>
 
     <?php include('includes/footer.php'); ?>
+    <section class="sec-footer">
+
+        <div class="isi-footer">
+            <div class="ikon">
+                <a href="#" class="fab fa-google"></a>
+
+                <a href="#" class="fab fa-linkedin"></a>
+
+                <a href="#" class="fab fa-github"></a>
+            </div>
+
+            <p>
+                BookU is a digital platform that provides access to a vast collection of books.
+                These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more.
+                They offer convenient options to purchase or rent books in both digital and print formats.
+                Users can also read reviews and ratings from other readers before making a decision.
+                These websites also provide a platform for authors to showcase their work and engage with readers.
+                BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.
+            </p>
+
+            <div class="cepat-link">
+                <a href="index.php">Home</a>
+                <a href="disclaimer.php">Disclaimer</a>
+                <a href="contact.php">Contact</a>
+                <a href="dmca.php">DMCA</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="credit">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script> Copyright:
+        <a href="#">BookU</a>
+    </div>
+
+
+
+
+    <script src="vendor/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <?php include('includes/scripts.php'); ?>
 </body>

@@ -1,1 +1,23 @@
-error.log
+# Local config with API keys
+config.local.php
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Error logs
+*.log
+error_log
+
+# Vendor (if using composer)
+vendor/

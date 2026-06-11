@@ -1,6 +1,6 @@
 <?php
 
-$url = "https://www.goodreads.com/book/isbn/" . $asin . "?key=akKZKemj3wGTLvq9MARTA";
+$url = "https://www.goodreads.com/book/isbn/" . $asin . "?key=" . GOODREADS_API_KEY;
 
 $parse = @simplexml_load_file($url);
 
@@ -29,7 +29,6 @@ if ($parse === false) {
     $publication_day = (string) $parse->book->publication_day;
 
     $average_rating = (float) $parse->book->average_rating;
-
     $num_pages = (string) $parse->book->num_pages ?: 'N/A';
     $publisher = (string) $parse->book->publisher ?: 'Unknown Publisher';
 }
