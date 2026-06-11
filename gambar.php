@@ -8,6 +8,7 @@ if (!isset($asin) || !preg_match('/^[A-Za-z0-9]+$/', $asin)) {
 }
 
 $url = "https://www.goodreads.com/book/isbn/" . urlencode($asin) . "?key=" . urlencode($goodreads_api_key);
+$url = "https://www.goodreads.com/book/isbn/" . $asin . "?key=" . GOODREADS_API_KEY;
 
 $parse = @simplexml_load_file($url);
 
@@ -36,7 +37,6 @@ if ($parse === false) {
     $publication_day = (string) $parse->book->publication_day;
 
     $average_rating = (float) $parse->book->average_rating;
-
     $num_pages = (string) $parse->book->num_pages ?: 'N/A';
     $publisher = (string) $parse->book->publisher ?: 'Unknown Publisher';
 }
