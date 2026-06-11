@@ -2,11 +2,6 @@
 
 include('info.php');
 
-if (isset($_GET['book']) && $_GET['book'] !== '') {
-    $asin = $_GET['book'];
-    include('gambar.php');
-    include('affiliate.php');
-}
 ?>
 
 <!DOCTYPE html>
@@ -16,14 +11,8 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BookU is a digital platform that provides access to a vast collection of books. 
-    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more. 
-    They offer convenient options to purchase or rent books in both digital and print formats. 
-    Users can also read reviews and ratings from other readers before making a decision. 
-    These websites also provide a platform for authors to showcase their work and engage with readers. 
-    BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.">
-    <meta name="robots" content="noindex">
-    <title>BookU - Find your Favorite's Free Book's Here!!</title>
+    <meta name="description" content="BookU is a digital platform that provides access to a vast collection of books. Browse through various genres including fiction, non-fiction, self-help, and many more. Read reviews and ratings from other readers before making a decision.">
+    <title>BookU - Find Your Favorite Free Books Here</title>
     <link rel="canonical" href="https://happybooku.com">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -44,7 +33,7 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
 
     <header class="header">
         <div class="header-1">
-            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"></i> bookU</a>
+            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
 
             <form action="search.php" class="search-form">
                 <input type="text" name="search" placeholder="search here.." id="search-box" required>
@@ -518,7 +507,7 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
                 <a href="index.php">Home</a>
                 <a href="disclaimer.php">Disclaimer</a>
                 <a href="contact.php">Contact</a>
-                <a href="dcma.php">DMCA</a>
+                <a href="dmca.php">DMCA</a>
             </div>
 
         </div>
@@ -532,8 +521,6 @@ if (isset($_GET['book']) && $_GET['book'] !== '') {
         </script> Copyright:
         <a href="#">BookU</a>
     </div>
-
-
 
 
 

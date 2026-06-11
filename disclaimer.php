@@ -102,7 +102,7 @@
 				<a href="index.php">Home</a>
 				<a href="disclaimer.php">Disclaimer</a>
 				<a href="contact.php">Contact</a>
-				<a href="dcma.php">DMCA</a>
+				<a href="dmca.php">DMCA</a>
 			</div>
 
 		</div>
