@@ -146,7 +146,7 @@
 
                             <!-- <div class="col"> -->
                             <div class="swiper-slide components">
-                                <?php renderBookCard($row); ?>
+                                <?php renderBookCard($row, 'text-decoration: none; color: black;'); ?>
                             </div>
                             <!-- </div> -->
 

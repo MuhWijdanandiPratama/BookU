@@ -14,7 +14,8 @@
     <?php
 
     if (isset($_GET["search"]) && $_GET["search"] !== '') :
-        $rows = searchGoodreads($_GET["search"], 'search.php');
+        $searchQuery = $_GET["search"];
+        $rows = searchGoodreads($searchQuery, 'search.php');
 
     ?>
 
