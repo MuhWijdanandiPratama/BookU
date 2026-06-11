@@ -19,14 +19,25 @@
         include('gambar.php');
         include('affiliate.php');
 
-        $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+        if (!empty($publication_year) && !empty($publication_month) && !empty($publication_day)) {
+            $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+        } else {
+            $date = '';
+        }
 
         function formatTanggal($date)
         {
-            return date('F d, Y', strtotime($date));
+            if (empty($date)) {
+                return 'Unknown';
+            }
+            $timestamp = strtotime($date);
+            if ($timestamp === false) {
+                return 'Unknown';
+            }
+            return date('F d, Y', $timestamp);
         }
 
-        $rows = searchGoodreads($author);
+        $rows = searchGoodreads($author, 'detail.php');
     ?>
 
 

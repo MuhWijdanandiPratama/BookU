@@ -2,9 +2,11 @@
 
 include('info.php');
 
-$asin = $_GET['book'];
-include('gambar.php');
-include('affiliate.php');
+if (isset($_GET['book']) && $_GET['book'] !== '') {
+    $asin = $_GET['book'];
+    include('gambar.php');
+    include('affiliate.php');
+}
 ?>
 
 <!DOCTYPE html>

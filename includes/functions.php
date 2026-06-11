@@ -18,16 +18,19 @@ function hapusStringSX98($url)
  * Search Goodreads for books matching a query string.
  * Returns an array of work results.
  */
-function searchGoodreads($query)
+function searchGoodreads($query, $caller = '')
 {
     $url = "https://www.goodreads.com/search?q=" . urlencode($query) . "&key=yepSbX0wOTBiypm7RRQ3A";
-    $parse = simplexml_load_file($url);
-
-    $result = $parse->search->results->work;
+    $parse = @simplexml_load_file($url);
 
     $rows = [];
-    foreach ($result as $hasil) {
-        $rows[] = $hasil;
+    if ($parse !== false && isset($parse->search->results->work)) {
+        $result = $parse->search->results->work;
+        foreach ($result as $hasil) {
+            $rows[] = $hasil;
+        }
+    } else {
+        error_log($caller . ": Failed to load or parse search results for query: " . $query);
     }
 
     return $rows;
