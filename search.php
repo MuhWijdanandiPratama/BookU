@@ -49,13 +49,15 @@
     if (isset($_GET["search"]) && !empty(trim($_GET["search"]))) :
         $searchQuery = trim($_GET["search"]);
         $url = "https://www.goodreads.com/search?q=" . urlencode($searchQuery) . "&key=" . GOODREADS_API_KEY;
-        $parse = simplexml_load_file($url);
+        $parse = @simplexml_load_file($url);
 
         $rows = [];
         if ($parse !== false && isset($parse->search->results->work)) {
             foreach ($parse->search->results->work as $hasil) {
                 $rows[] = $hasil;
             }
+        } else {
+            error_log("search.php: Failed to load or parse search results for query: " . $searchQuery);
         }
 
     ?>
@@ -89,7 +91,7 @@
                                             </a>
                                         <?php else : ?>
                                             <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
-                                                <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
+                                                <img src="<?= sanitize(hapusStringSX98($row->best_book->image_url)) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
                                             </a>
                                         <?php endif; ?>
                                     </div>

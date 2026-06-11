@@ -51,19 +51,35 @@
     if (!empty($_GET['book']) && isValidBookId($_GET['book'])) :
         $asin = $_GET['book'];
         include('gambar.php');
-        include('affiliate.php');
 
-        $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+        // Check if API returned valid data before rendering the page
+        if (empty($title) || $title === 'Unknown Title') :
+    ?>
+        <div class="d-flex flex-column align-items-center justify-content-center" style="height: 305px;">
+            <p style="font-size: 2rem;">Sorry! Book not found.</p>
+            <a href="index.php" class="btn btn-primary" style="font-size: 1.5rem;">back to home</a>
+        </div>
+    <?php
+        else :
+            include('affiliate.php');
 
-        $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=" . GOODREADS_API_KEY;
-        $parse = simplexml_load_file($url);
-
-        $rows = [];
-        if ($parse !== false && isset($parse->search->results->work)) {
-            foreach ($parse->search->results->work as $hasil) {
-                $rows[] = $hasil;
+            if (!empty($publication_year) && !empty($publication_month) && !empty($publication_day)) {
+                $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
+            } else {
+                $date = '';
             }
-        }
+
+            $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=" . GOODREADS_API_KEY;
+            $parse = @simplexml_load_file($url);
+
+            $rows = [];
+            if ($parse !== false && isset($parse->search->results->work)) {
+                foreach ($parse->search->results->work as $hasil) {
+                    $rows[] = $hasil;
+                }
+            } else {
+                error_log("detail.php: Failed to load related books for author: " . $author);
+            }
     ?>
 
 
@@ -137,7 +153,7 @@
                     </div><br><br>
                     <h5>Description : </h5>
                     <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
-                        <?= $desc ?>
+                        <?= strip_tags($desc, '<p><br><b><i><em><strong><ul><ol><li>') ?>
                     </div>
                 </div>
             </div>
@@ -162,7 +178,7 @@
                                         </a>
                                     <?php else : ?>
                                         <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
-                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
+                                            <img src="<?= sanitize(hapusStringSX98($row->best_book->image_url)) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
                                         </a>
                                     <?php endif; ?>
                                 </div>
@@ -194,6 +210,8 @@
                 location.href = '<?= $afftwo; ?>';
             }
         </script>
+
+    <?php endif; // end valid book data check ?>
 
     <?php else : ?>
 

@@ -2,11 +2,6 @@
 
 include('info.php');
 
-$asin = isset($_GET['book']) && isValidBookId($_GET['book']) ? $_GET['book'] : null;
-if ($asin) {
-    include('gambar.php');
-    include('affiliate.php');
-}
 ?>
 
 <!DOCTYPE html>
@@ -526,8 +521,6 @@ if ($asin) {
         </script> Copyright:
         <a href="#">BookU</a>
     </div>
-
-
 
 
 
