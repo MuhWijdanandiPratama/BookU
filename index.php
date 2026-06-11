@@ -8,29 +8,26 @@ include('info.php');
 <html lang="en">
 
 <head>
+    <?php include('includes/head.php'); ?>
+    <meta name="description" content="BookU is a digital platform that provides access to a vast collection of books. 
+    These websites allow users to browse through various genres, such as fiction, non-fiction, self-help, and many more. 
+    They offer convenient options to purchase or rent books in both digital and print formats. 
+    Users can also read reviews and ratings from other readers before making a decision. 
+    These websites also provide a platform for authors to showcase their work and engage with readers. 
+    BookU are a great place for book enthusiasts to discover new titles, buy books, and connect with other readers and authors.">
+    <meta name="robots" content="noindex">
+    <title>BookU - Find your Favorite's Free Book's Here!!</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BookU is a digital platform that provides access to a vast collection of books. Browse through various genres including fiction, non-fiction, self-help, and many more. Read reviews and ratings from other readers before making a decision.">
     <title>BookU - Find Your Favorite Free Books Here</title>
     <link rel="canonical" href="https://happybooku.com">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="asset/css/cardui.css">
-
-    <link rel="stylesheet" href="asset/css/style.css">
-
-    <link rel="shortcut icon" href="asset/image/favicon.ico">
-
 </head>
 
 <body>
 
+    <?php include('includes/header.php'); ?>
     <header class="header">
         <div class="header-1">
             <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
@@ -483,6 +480,7 @@ include('info.php');
 
     </section>
 
+    <?php include('includes/footer.php'); ?>
     <section class="sec-footer">
 
         <div class="isi-footer">
@@ -529,7 +527,7 @@ include('info.php');
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="asset/js/script.js"></script>
+    <?php include('includes/scripts.php'); ?>
 </body>
 
 </html>

@@ -1,28 +1,22 @@
+<?php include('includes/functions.php'); ?>
 <?php include('info.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('includes/head.php'); ?>
     <title>Search | BookU</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="asset/css/cardui.css">
-
-    <link rel="stylesheet" href="asset/css/style.css">
-
-    <link rel="shortcut icon" href="asset/image/favicon.ico">
 </head>
 
 <body>
 
+    <?php include('includes/header.php'); ?>
+
+    <?php
+
+    if (isset($_GET["search"]) && $_GET["search"] !== '') :
+        $searchQuery = $_GET["search"];
+        $rows = searchGoodreads($searchQuery, 'search.php');
     <header class="header">
         <div class="header-1">
             <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
@@ -84,6 +78,7 @@
 
                             <div class="col">
                                 <div class="components">
+                                    <?php renderBookCard($row); ?>
                                     <div class="img mb-3">
                                         <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
                                             <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
@@ -126,12 +121,9 @@
     <?php endif; ?>
 
 
+    <?php include('includes/footer.php'); ?>
 
-    <script src="vendor/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script src="asset/js/script.js"></script>
+    <?php include('includes/scripts.php'); ?>
 </body>
 
 </html>

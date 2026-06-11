@@ -1,49 +1,15 @@
-<?php include('info.php'); ?>
+<?php include('includes/functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include('includes/head.php'); ?>
     <title>Detail Book</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="asset/css/cardui.css">
-
-    <link rel="stylesheet" href="asset/css/style.css">
-
-    <link rel="shortcut icon" href="asset/image/favicon.ico">
-
 </head>
 
 <body style="background: url('asset/image/banner-bg.jpg');">
 
-    <header class="header">
-        <div class="header-1">
-            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
-
-            <form action="search.php" class="search-form">
-                <input type="text" name="search" placeholder="search here.." id="search-box" required>
-                <button type="submit"><span class="fas fa-search"></span></button>
-            </form>
-
-        </div>
-
-        <div class="header-2">
-            <nav class="nafbar">
-                <a href="index.php">home</a>
-                <a href="disclaimer.php">disclaimer</a>
-                <a href="contact.php">contact</a>
-                <a href="dmca.php">DMCA</a>
-            </nav>
-        </div>
-    </header>
+    <?php include('includes/header.php'); ?>
 
 
 
@@ -52,34 +18,7 @@
         $asin = $_GET['book'];
         include('gambar.php');
 
-        // Check if API returned valid data before rendering the page
-        if (empty($title) || $title === 'Unknown Title') :
-    ?>
-        <div class="d-flex flex-column align-items-center justify-content-center" style="height: 305px;">
-            <p style="font-size: 2rem;">Sorry! Book not found.</p>
-            <a href="index.php" class="btn btn-primary" style="font-size: 1.5rem;">back to home</a>
-        </div>
-    <?php
-        else :
-            include('affiliate.php');
-
-            if (!empty($publication_year) && !empty($publication_month) && !empty($publication_day)) {
-                $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
-            } else {
-                $date = '';
-            }
-
-            $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=" . GOODREADS_API_KEY;
-            $parse = @simplexml_load_file($url);
-
-            $rows = [];
-            if ($parse !== false && isset($parse->search->results->work)) {
-                foreach ($parse->search->results->work as $hasil) {
-                    $rows[] = $hasil;
-                }
-            } else {
-                error_log("detail.php: Failed to load related books for author: " . $author);
-            }
+        $rows = searchGoodreads($author, 'detail.php');
     ?>
 
 
@@ -171,21 +110,7 @@
                         <?php foreach ($rows as $row) : ?>
 
                             <div class="swiper-slide components">
-                                <div class="img mb-3">
-                                    <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
-                                        <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
-                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
-                                        </a>
-                                    <?php else : ?>
-                                        <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
-                                            <img src="<?= sanitize(hapusStringSX98($row->best_book->image_url)) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
-                                        </a>
-                                    <?php endif; ?>
-                                </div>
-                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
-                                    <p><?= sanitize($row->best_book->title) ?></p>
-                                </a>
-                                <p class="text-secondary" style="margin-top: -10px;"> By <?= sanitize($row->best_book->author->name) ?> </p>
+                                <?php renderBookCard($row, 'text-decoration: none; color: black;'); ?>
                             </div>
 
                         <?php endforeach; ?>
@@ -226,6 +151,7 @@
 
 
 
+    <?php include('includes/footer.php'); ?>
     <section class="sec-footer">
 
         <div class="isi-footer">
@@ -272,7 +198,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="asset/js/script.js"></script>
+    <?php include('includes/scripts.php'); ?>
 </body>
 
 </html>
