@@ -1,0 +1,20 @@
+{
+    "name": "muhwijdanandipratama/booku",
+    "description": "BookU - Free Book Platform",
+    "type": "project",
+    "authors": [
+        {
+            "name": "BookU",
+            "email": "booku@example.com"
+        }
+    ],
+    "autoload": {
+        "files": ["src/helpers.php"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
