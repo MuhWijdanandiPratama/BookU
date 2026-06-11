@@ -1,3 +1,4 @@
+<?php include('info.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +26,7 @@
 
     <header class="header">
         <div class="header-1">
-            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"></i> bookU</a>
+            <a href="index.php" class="logo"><img src="asset/image/logo.png" width="50"> bookU</a>
 
             <form action="search.php" class="search-form">
                 <input type="text" name="search" placeholder="search here.." id="search-box" required>
@@ -47,35 +48,20 @@
 
 
     <?php
-    if (!empty($_GET['book'])) :
+    if (!empty($_GET['book']) && isValidBookId($_GET['book'])) :
         $asin = $_GET['book'];
         include('gambar.php');
         include('affiliate.php');
 
         $date = $publication_year . '-' . $publication_month . '-' . $publication_day;
 
-        function formatTanggal($date)
-        {
-            return date('F d, Y', strtotime($date));
-        }
-
-        $url = "https://www.goodreads.com/search?q=" . $author . "&key=yepSbX0wOTBiypm7RRQ3A";
+        $url = "https://www.goodreads.com/search?q=" . urlencode($author) . "&key=" . GOODREADS_API_KEY;
         $parse = simplexml_load_file($url);
 
-        $result = $parse->search->results->work;
-
-        $rows = []; // tempat kosong
-        foreach ($result as $hasil) {
-            $rows[] = $hasil;
-        }
-
-        function hapusStringSX98($url)
-        {
-            if (preg_match("/_SX98_.jpg/", $url)) {
-                $result = preg_replace("/_SX98_.jpg/", "", $url);
-                return $result . 'jpg';
-            } else {
-                return $url;
+        $rows = [];
+        if ($parse !== false && isset($parse->search->results->work)) {
+            foreach ($parse->search->results->work as $hasil) {
+                $rows[] = $hasil;
             }
         }
     ?>
@@ -88,7 +74,7 @@
                         <?php if (preg_match("/nophoto/", $gambarx)) : ?>
                             <img src="asset/image/book-2.png" class="img-center center-block  img-rounded center  img-thumbnail">
                         <?php else : ?>
-                            <img src="<?= $gambarx ?>" class="img-center center-block  img-rounded center  img-thumbnail">
+                            <img src="<?= sanitize($gambarx) ?>" class="img-center center-block  img-rounded center  img-thumbnail">
                         <?php endif; ?>
                     </center>
                     <div class="text-center">
@@ -98,26 +84,11 @@
                 </div>
 
                 <div class="col-lg-9 col-md-9 col-sm-6">
-                    <h1><?= str_replace("-", " ", $title) ?></h1>
-                    <h5><?php 
-
-                            $star = 1;
-                            while ($star <= 5) {
-                                if ($average_rating < $star) {
-                                    ?>
-                                        <li style="color: gold;" class="list-inline-item"><i class="fa fa-star"></i></li>
-                                    <?php
-                                } else{
-                                    ?>
-                                        <li style="color: gold;" class="list-inline-item"><i class="fa fa-star"></i></li>
-                                    <?php
-                                }
-
-                                $star++;
-                            }
-                            ?>
-                            <?= $average_rating ?>
-                            </h5>
+                    <h1><?= sanitize(str_replace("-", " ", $title)) ?></h1>
+                    <h5>
+                        <?= renderStarRating((float)$average_rating) ?>
+                        <?= sanitize($average_rating) ?>
+                    </h5>
                     <hr>
                     <div class="row row-cols-2 g-5">
                         <div class="col">
@@ -125,7 +96,7 @@
                                 <tr>
                                     <td><h4>author</h4></td>
                                     <td><h4>&nbsp;:</h4></td>
-                                    <td><h4>&nbsp;<?= $author ?></h4></td>
+                                    <td><h4>&nbsp;<?= sanitize($author) ?></h4></td>
                                 </tr>
                                 <tr>
                                     <td><h5>format</h5></td>
@@ -135,7 +106,7 @@
                                 <tr>
                                     <td><h5>publisher</h5></td>
                                     <td><h5>&nbsp;:</h5></td>
-                                    <td><h5>&nbsp;<?= $publisher ?></h5></td>
+                                    <td><h5>&nbsp;<?= sanitize($publisher) ?></h5></td>
                                 </tr>
                             </table>
                         </div>
@@ -144,10 +115,10 @@
                                 <tr>
                                     <td><h5>pages</h5></td>
                                     <td><h5>&nbsp;:</h5></td>
-                                    <td><h5>&nbsp;<?= $num_pages ?> pages</h5></td>
+                                    <td><h5>&nbsp;<?= sanitize($num_pages) ?> pages</h5></td>
                                 </tr>
                                 <tr>
-                                    <td><h5>publised</h5></td>
+                                    <td><h5>published</h5></td>
                                     <td><h5>&nbsp;:</h5></td>
                                     <td><h5>&nbsp;<?= formatTanggal($date) ?></h5></td>
                                 </tr>
@@ -155,15 +126,15 @@
                         </div>
                     </div><br>
                     <div class="row">
-							<div class="col-md-12">
-								<div class="list-group">
-									<a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-success" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Register a free 1 month Trial Account.</b></a>
-									<a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-info" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Download as many books as you like (Personal use)</b></a>
-									<a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-warning" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Cancel the membership at any time if not satisfied.</b></a>
-									<a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-danger" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Join Over 80000 Happy Readers</b></a>
-								</div>
-							</div>
-                        </div><br><br>
+                        <div class="col-md-12">
+                            <div class="list-group">
+                                <a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-success" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Register a free 1 month Trial Account.</b></a>
+                                <a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-info" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Download as many books as you like (Personal use)</b></a>
+                                <a onclick="downloadpdf1()" href="#" class="list-group-item list-group-item-warning" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Cancel the membership at any time if not satisfied.</b></a>
+                                <a onclick="downloadpdf2()" href="#" class="list-group-item list-group-item-danger" rel="nofollow"><b><span class="glyphicon glyphicon-ok"></span> Join Over 80000 Happy Readers</b></a>
+                            </div>
+                        </div>
+                    </div><br><br>
                     <h5>Description : </h5>
                     <div style="height: 20rem;background: #b8b8b8;overflow: scroll;padding: .9rem;">
                         <?= $desc ?>
@@ -174,38 +145,34 @@
 
         <section class="sec-main-books">
 
-            <h1 class="judul"> <span>another book from <?= $author ?></span> </h1>
+            <h1 class="judul"> <span>another book from <?= sanitize($author) ?></span> </h1>
 
             <div class="books-container">
 
-                <!-- <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3"> -->
                 <div class="swiper another-books-slider">
                     <div class="swiper-wrapper">
 
                         <?php foreach ($rows as $row) : ?>
 
-                            <!-- <div class="col"> -->
                             <div class="swiper-slide components">
                                 <div class="img mb-3">
                                     <?php if (preg_match("/nophoto/", $row->best_book->image_url)) : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
+                                            <img src="asset/image/book-2.png" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
                                         </a>
                                     <?php else : ?>
-                                        <a href="detail.php?book=<?= $row->best_book->id ?>">
-                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= $row->best_book->title ?>" />
+                                        <a href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
+                                            <img src="<?= hapusStringSX98($row->best_book->image_url) ?>" width="150" height="200" alt="<?= sanitize($row->best_book->title) ?>" />
                                         </a>
                                     <?php endif; ?>
                                 </div>
-                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= $row->best_book->id ?>">
-                                    <p><?= $row->best_book->title ?></p>
+                                <a style="text-decoration: none; color: black;" href="detail.php?book=<?= sanitize($row->best_book->id) ?>">
+                                    <p><?= sanitize($row->best_book->title) ?></p>
                                 </a>
-                                <p class="text-secondary" style="margin-top: -10px;"> By <?= $row->best_book->author->name ?> </p>
+                                <p class="text-secondary" style="margin-top: -10px;"> By <?= sanitize($row->best_book->author->name) ?> </p>
                             </div>
-                            <!-- </div> -->
 
                         <?php endforeach; ?>
-                        <!-- </div> -->
 
                     </div>
 
@@ -265,7 +232,7 @@
                 <a href="index.php">Home</a>
                 <a href="disclaimer.php">Disclaimer</a>
                 <a href="contact.php">Contact</a>
-                <a href="dcma.php">DMCA</a>
+                <a href="dmca.php">DMCA</a>
             </div>
 
         </div>
@@ -279,8 +246,6 @@
         </script> Copyright:
         <a href="#">BookU</a>
     </div>
-
-
 
 
 

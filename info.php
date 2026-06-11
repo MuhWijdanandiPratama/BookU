@@ -1,17 +1,14 @@
 <?php
-set_time_limit(0); 
-error_reporting(0); 
+set_time_limit(0);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+error_reporting(E_ALL);
+
 $new_mem_limit = '256M';
-$old_mem_limit = ini_set('memory_limit', $new_mem_limit);
+ini_set('memory_limit', $new_mem_limit);
 
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/functions.php';
 
-$webname="BookU";
-$emailDMCA="pratamwijdanandi@gmail.com";
-
-//$urlaff="https://cdn.ebxu2la.club/r/U4OHkh/?s1=Wildan";
-
-
-
-
-
-?>
+$webname = SITE_NAME;
+$emailDMCA = DMCA_EMAIL;
